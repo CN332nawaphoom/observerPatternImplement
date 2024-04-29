@@ -32,6 +32,9 @@ public class CarGpsCenter {
         // List<CarLocation> carLocation = newCarLocation; 
     }
 
+    // socket
+    // recieve location
+    // updateLocation(location);
     
 }
 

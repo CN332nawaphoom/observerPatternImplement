@@ -18,6 +18,9 @@ public class CarGps implements MySubject {
     public void notifyObserver(){
         for (MyObserver carGpsCenter : carGpsCenters) {
             carGpsCenter.update();
+            // sendLocationToCarGpsCenter(location);
         }
     }
+
+    // private void sendLocationToCarGpsCenter(location){};
 }
