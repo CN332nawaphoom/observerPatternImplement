@@ -2,23 +2,22 @@ package MyPackage;
 import java.util.ArrayList;
 import java.util.List;
 
-import MyPackage.MySubject;
-
 public class CarGps implements MySubject {
-    List<MyObserver> observers = new ArrayList<MyObserver>();
+    private List<MyObserver> carGpsCenters = new ArrayList<MyObserver>();
+    // private CarLocation location = sensor(); 
 
-    public void attach(MyObserver o){
-        observers.add(o);
+    public void attach(MyObserver carGpsCenter){
+        carGpsCenters.add(carGpsCenter);
     }
 
-    public void detach(MyObserver o){
-        observers.remove(o);
+    public void detach(MyObserver carGpsCenter){
+        carGpsCenters.remove(carGpsCenter);
 
     }
 
     public void notifyObserver(){
-        for (MyObserver myObserver : observers) {
-            myObserver.update();
+        for (MyObserver carGpsCenter : carGpsCenters) {
+            carGpsCenter.update();
         }
     }
 }
