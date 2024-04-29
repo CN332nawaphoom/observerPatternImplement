@@ -1,5 +1,5 @@
-package Mypackage;
-import Mypackage.MyObserver;
+package MyPackage;
+import MyPackage.MyObserver;
 public interface MySubject {
     public void attach(MyObserver o);
 

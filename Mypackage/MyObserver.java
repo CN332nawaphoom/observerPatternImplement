@@ -1,4 +1,4 @@
-package Mypackage;
+package MyPackage;
 public interface MyObserver {
     public void update();
 }
